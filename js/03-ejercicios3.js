@@ -8,37 +8,38 @@ Dificultad:  🟢
 
 */
 class rectangulos {
-
   //propiedades
-  constructor(alto,ancho){
-    this.alto=alto;
-    this.ancho=ancho;
+  constructor(alto, ancho) {
+    this.alto = alto;
+    this.ancho = ancho;
   }
 
   //metodos->modificar propiedades, calcular perimetro (alto*2+ancho*2), calcular area (alto x ancho)
   modificaralto() {
-    return this.alto = this.alto
+    return (this.alto = this.alto);
   }
   modificarancho() {
-    return this.ancho = this.ancho;
+    return (this.ancho = this.ancho);
   }
   mostrarpropiedades() {
-    document.write(`<p>El Alto es ${this.alto} y el Ancho es ${this.ancho}</p>`);
+    document.write(
+      `<p>El Alto es ${this.alto} y el Ancho es ${this.ancho}</p>`
+    );
   }
   calcularperimetro() {
-    let perimetro = this.alto+this.alto+this.ancho+this.ancho
+    let perimetro = this.alto + this.alto + this.ancho + this.ancho;
     document.write(`<p>El perimetro de el rectangulo es ${perimetro}</p>`);
   }
   calculararea() {
     let area = this.alto * this.ancho;
     document.write(`<p>El Area de el rectangulo es ${area}</p>`);
   }
-};
+}
 
-let rectangulo1= new rectangulos(5,7)
-rectangulo1.mostrarpropiedades()
-rectangulo1.calculararea()
-rectangulo1.calcularperimetro()
+let rectangulo1 = new rectangulos(5, 7);
+rectangulo1.mostrarpropiedades();
+rectangulo1.calculararea();
+rectangulo1.calcularperimetro();
 
 rectangulo1.modificarancho(7);
 rectangulo1.modificaralto(12);

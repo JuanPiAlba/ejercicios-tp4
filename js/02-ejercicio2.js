@@ -35,12 +35,12 @@ let cuenta = {
     }
   },
 
-  informar: function(){
-    document.write(`<p>El titular ${cuenta.titular} de la cuenta es </p>`)
-    document.write(`<p>El saldo de la cuenta es ${cuenta.saldo} </p>`)
-  }
+  informar: function () {
+    document.write(`<p>El titular ${cuenta.titular} de la cuenta es </p>`);
+    document.write(`<p>El saldo de la cuenta es ${cuenta.saldo} </p>`);
+  },
 };
 
-cuenta.ingresar(100)
-cuenta.extraer(50)
-cuenta.informar()
+cuenta.ingresar(100);
+cuenta.extraer(50);
+cuenta.informar();

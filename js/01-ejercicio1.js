@@ -27,5 +27,5 @@ let objeto = {
   },
 };
 
-objeto.encender()
-objeto.apagar()
+objeto.encender();
+objeto.apagar();
