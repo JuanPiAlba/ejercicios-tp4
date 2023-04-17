@@ -22,6 +22,4 @@ let Personas = [
     new Persona('Agustina','40','profesora')
 ]
 
-Personas.forEach(persona => {persona.saludar()});
-
-Personas.forEach(persona=>{persona.despedirse()})
+Personas.forEach(persona => {persona.saludar(),persona.despedirse()});

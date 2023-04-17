@@ -17,7 +17,7 @@ class Perro extends Animal {
   }
   emitirSonido1() {
     document.write(
-      `Hola me llamo ${this.nombre}, tengo${this.edad} años de edad y soy un lindo ${this.animal} y hago ${this.sonido}.`
+      `Hola me llamo ${this.nombre}, tengo ${this.edad} años de edad y soy un lindo ${this.animal} y hago ${this.sonido}.`
     );
   }
 }
@@ -46,9 +46,10 @@ class Gato extends Animal {
   set sonido(nuevoSonido){
     this.#sonido = nuevoSonido
   }
+
   emitirSonido1() {
     document.write(
-      `<p>Hola me llamo ${this.nombre} , tengo${this.edad} años de edad soy un lindo${this.animal} y hago ${this.sonido}.</p>`
+      `<p>Hola me llamo ${this.nombre} , tengo${this.edad} años de edad soy un lindo ${this.animal} y hago ${this.sonido}.</p>`
     );
   }  
 }
